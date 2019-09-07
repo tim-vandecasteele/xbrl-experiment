@@ -1,0 +1,344 @@
+[
+    {
+        "name": "lyquidity/utilities",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/bseddon/utilities.git",
+            "reference": "cebaaf94ac57d3c79f35cb5c3db57c9af1a29908"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/bseddon/utilities/zipball/cebaaf94ac57d3c79f35cb5c3db57c9af1a29908",
+            "reference": "cebaaf94ac57d3c79f35cb5c3db57c9af1a29908",
+            "shasum": ""
+        },
+        "require": {
+            "ext-hash": "*",
+            "ext-json": "*",
+            "ext-libxml": "*",
+            "ext-simplexml": "*",
+            "ext-xml": "*",
+            "lib-libxml": "*",
+            "lyquidity/xml": "dev-master",
+            "php": "^7.0"
+        },
+        "time": "2018-11-21T12:12:29+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "./tuple-dictionary.php",
+                "./SimpleXMLElementToArray.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-3.0-only"
+        ],
+        "authors": [
+            {
+                "name": "Bill Seddon",
+                "homepage": "https://github.com/bseddon"
+            }
+        ],
+        "description": "Utility classes to provide a tuple dictionary and to convert a simple XML class to an array",
+        "homepage": "https://github.com/bseddon/utilities",
+        "keywords": [
+            "SimpleXML",
+            "lyquidity",
+            "tuple"
+        ]
+    },
+    {
+        "name": "lyquidity/xbrl",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/bseddon/XBRL.git",
+            "reference": "bb46d40589dc05eaab7552684e0d5a37339d750c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/bseddon/XBRL/zipball/bb46d40589dc05eaab7552684e0d5a37339d750c",
+            "reference": "bb46d40589dc05eaab7552684e0d5a37339d750c",
+            "shasum": ""
+        },
+        "require": {
+            "ext-hash": "*",
+            "ext-json": "*",
+            "ext-libxml": "*",
+            "ext-simplexml": "*",
+            "ext-xml": "*",
+            "lib-libxml": "*",
+            "lyquidity/utilities": "dev-master",
+            "lyquidity/xml": "dev-master",
+            "lyquidity/xpath2": "dev-master",
+            "pear/log": ">1.13",
+            "php": ">=7.0"
+        },
+        "time": "2019-08-12T19:28:38+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "./XBRL.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-3.0-only"
+        ],
+        "authors": [
+            {
+                "name": "Bill Seddon",
+                "homepage": "https://github.com/bseddon"
+            }
+        ],
+        "description": "Classes that implement the XBRL 2.1, XDT, Formulas, Generics and XFI specifications",
+        "homepage": "https://github.com/lyquidity/XBRL",
+        "keywords": [
+            "dimensions",
+            "formulas",
+            "lyquidity",
+            "xbrl"
+        ]
+    },
+    {
+        "name": "lyquidity/xml",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/bseddon/xml.git",
+            "reference": "fd758ed10708017badb4f1f13194e5dc4fa751bc"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/bseddon/xml/zipball/fd758ed10708017badb4f1f13194e5dc4fa751bc",
+            "reference": "fd758ed10708017badb4f1f13194e5dc4fa751bc",
+            "shasum": ""
+        },
+        "require": {
+            "ext-date": "*",
+            "ext-dom": "*",
+            "ext-hash": "*",
+            "ext-intl": "*",
+            "ext-libxml": "*",
+            "ext-mbstring": "*",
+            "ext-pcre": "*",
+            "ext-simplexml": "*",
+            "ext-spl": "*",
+            "ext-xml": "*",
+            "lib-iconv": "*",
+            "lib-icu": "*",
+            "lib-libxml": "*",
+            "lib-pcre": "*",
+            "pear/log": ">1.13",
+            "php": "^7.0"
+        },
+        "time": "2019-02-28T15:04:08+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "./bootstrap.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-3.0-only"
+        ],
+        "authors": [
+            {
+                "name": "Bill Seddon",
+                "homepage": "https://github.com/orgs/lyquidity/people/bseddon"
+            }
+        ],
+        "description": "Reads XML Schema documents (.xsd) files and extracts type information for PHP",
+        "homepage": "https://github.com/bseddon/xml",
+        "keywords": [
+            "lyquidity",
+            "schema",
+            "xml"
+        ]
+    },
+    {
+        "name": "lyquidity/xpath2",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/bseddon/XPath20.git",
+            "reference": "69882b6efffaa5470a819d5fdd2f6473ddeb046d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/bseddon/XPath20/zipball/69882b6efffaa5470a819d5fdd2f6473ddeb046d",
+            "reference": "69882b6efffaa5470a819d5fdd2f6473ddeb046d",
+            "shasum": ""
+        },
+        "require": {
+            "ext-bcmath": "*",
+            "ext-calendar": "*",
+            "ext-date": "*",
+            "ext-dom": "*",
+            "ext-hash": "*",
+            "ext-iconv": "*",
+            "ext-intl": "*",
+            "ext-json": "*",
+            "ext-libxml": "*",
+            "ext-mbstring": "*",
+            "ext-pcre": "*",
+            "ext-simplexml": "*",
+            "ext-spl": "*",
+            "ext-xml": "*",
+            "lib-iconv": "*",
+            "lib-icu": "*",
+            "lib-libxml": "*",
+            "lib-pcre": "*",
+            "lyquidity/xml": "dev-master",
+            "pear/log": ">1.13",
+            "php": "^7.0"
+        },
+        "time": "2019-05-01T01:47:18+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "lyquidity\\XPath2\\": "./"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-3.0-only"
+        ],
+        "authors": [
+            {
+                "name": "Bill Seddon",
+                "homepage": "https://github.com/bseddon"
+            }
+        ],
+        "description": "Provides XPath 2.0 statement execution library for PHP",
+        "homepage": "https://github.com/bseddon/XPath20",
+        "keywords": [
+            "XPath 2.0",
+            "lyquidity",
+            "xml"
+        ]
+    },
+    {
+        "name": "pear/log",
+        "version": "1.13.1",
+        "version_normalized": "1.13.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/pear/Log.git",
+            "reference": "c4be9ded2353c7c231d4c35cc3da75b209453803"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/pear/Log/zipball/c4be9ded2353c7c231d4c35cc3da75b209453803",
+            "reference": "c4be9ded2353c7c231d4c35cc3da75b209453803",
+            "shasum": ""
+        },
+        "require": {
+            "pear/pear_exception": "1.0.0",
+            "php": ">5.2"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "*"
+        },
+        "suggest": {
+            "pear/db": "Install optionally via your project's composer.json"
+        },
+        "time": "2016-04-16T00:49:33+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Log": "./"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "include-path": [
+            ""
+        ],
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jon Parise",
+                "role": "Developer",
+                "email": "jon@php.net",
+                "homepage": "http://www.indelible.org"
+            }
+        ],
+        "description": "PEAR Logging Framework",
+        "homepage": "http://pear.github.io/Log/",
+        "keywords": [
+            "log",
+            "logging"
+        ]
+    },
+    {
+        "name": "pear/pear_exception",
+        "version": "v1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/pear/PEAR_Exception.git",
+            "reference": "8c18719fdae000b690e3912be401c76e406dd13b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/pear/PEAR_Exception/zipball/8c18719fdae000b690e3912be401c76e406dd13b",
+            "reference": "8c18719fdae000b690e3912be401c76e406dd13b",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=4.4.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "*"
+        },
+        "time": "2015-02-10T20:07:52+00:00",
+        "type": "class",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "PEAR": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "include-path": [
+            "."
+        ],
+        "license": [
+            "BSD-2-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Helgi Thormar",
+                "email": "dufuz@php.net"
+            },
+            {
+                "name": "Greg Beaver",
+                "email": "cellog@php.net"
+            }
+        ],
+        "description": "The PEAR Exception base class.",
+        "homepage": "https://github.com/pear/PEAR_Exception",
+        "keywords": [
+            "exception"
+        ]
+    }
+]

@@ -1,0 +1,9 @@
+{
+    "require": {
+        "lyquidity/xbrl": "dev-master",
+        "lyquidity/xpath2": "dev-master",
+        "lyquidity/utilities": "dev-master",
+        "lyquidity/xml": "dev-master",
+        "pear/log": "^1.13"
+    }
+}
