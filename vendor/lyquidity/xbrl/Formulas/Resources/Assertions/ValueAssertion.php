@@ -243,7 +243,7 @@ class ValueAssertion extends VariableSetAssertion
 			else if ( $result instanceof CoreFuncs::$False )
 			{
 				$this->unsatisfied[] = $evaluationResult;
-				$this->generatedUnsatisifiedMessages = array_merge( $this->generatedSatisifiedMessages, $this->processMessages( $this->unsatisfiedMessages, $vars ) );
+				$this->generatedUnsatisifiedMessages = array_merge( $this->generatedUnsatisifiedMessages, $this->processMessages( $this->unsatisfiedMessages, $vars ) );
 			}
 			else
 			{
