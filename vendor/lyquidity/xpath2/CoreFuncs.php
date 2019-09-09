@@ -276,6 +276,9 @@ class CoreFuncs
 		{
 			return $a == $b;
 		}
+		else if ( $typeA == Types::$BooleanType || $typeB == Types::$BooleanType ) {
+			return CoreFuncs::BooleanValue($a) == CoreFuncs::BooleanValue($b);
+		}
 		else if ( $raiseExceptionOnMismatch )
 		{
 			throw XPath2Exception::withErrorCodeAndParams( "XPTY0004", Resources::BinaryOperatorNotDefined,
