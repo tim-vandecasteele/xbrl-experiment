@@ -75,11 +75,18 @@ function getConceptLabel( $context, $provider, $args )
 			throw new \InvalidArgumentException();
 		}
 
+		if ( ! isset( $context->xbrlInstance ) )
+		{
+			throw new \InvalidArgumentException( "XBRL Instance not set in context" );
+		}
+		$instance = $context->xbrlInstance;
+
 		// Look up the node namespace in the instance taxonomy
 		/**
 		 * @var \XBRL $taxonomy
 		 */
-		$taxonomy = $context->xbrlTaxonomy;
+		$taxonomy = $instance->getTaxonomyForNamespace( $args[0]->NamespaceUri );
+
 		if ( ! $taxonomy )
 		{
 			throw XPath2Exception::withErrorCode( "xfie:invalidConceptQName", "Invalid QName" );
