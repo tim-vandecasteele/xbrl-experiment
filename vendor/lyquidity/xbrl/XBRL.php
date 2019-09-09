@@ -207,6 +207,9 @@ class XBRL {
 	 */
 	private $elementIndex						= array();
 
+
+	private $processedLinkbases    = array();
+
 	/**
 	 * The elements in the taxonomy that are tuples
 	 * @var array $tupleMembersIndex
@@ -6009,10 +6012,18 @@ class XBRL {
 		$xml_basename = pathinfo( $parts[0], PATHINFO_BASENAME );
 		$fragment = isset( $parts[1] ) ? $parts[1] : "";
 
-		if ( isset( $this->context->processedLinkbases[ 'gen:arc:' . $xml_basename ] ) )
+		// only skip when this linkbase was processed already for this taxonomy
+		// although it's possible it's already processed for another taxonomy, if you
+		// wouldn't process it, it would mean that resources etc. would not be correctly
+		// assigned. To make sure that formulas are unique, an explicit check is done
+		// when the formula is assigned.
+		if ( isset( $this->processedLinkbases[ $xml_basename ] ) )
 		{
 			return;
+		} else {
+			$this->processedLinkbases[ $xml_basename ] = true;
 		}
+
 
 		// TODO Change this to use SchemaTypes::resolve_path
 		$path = XBRL::resolve_path( $linkbaseRef['href'], $linkbaseRef['base'] . $xml_basename );
@@ -6871,8 +6882,8 @@ class XBRL {
 								$resource['base'] = $base . ( isset( $resource['base'] ) ? $resource['base'] : "" );
 							}
 
-							// If the resource has a name make sure the name is unique
-							if ( isset( $resource['name'] ) )
+							// If the resource has a name make sure the name is unique unless this linkbase was already processed
+							if ( !isset( $this->context->processedLinkbases[ 'gen:arc:' . $xml_basename ] ) && isset( $resource['name'] ) )
 							{
 								$name = is_array( $resource['name'] )
 									? ( new QName($resource['name']['originalPrefix'], $resource['name']['namespace'], $resource['name']['name'] ) )->clarkNotation()
