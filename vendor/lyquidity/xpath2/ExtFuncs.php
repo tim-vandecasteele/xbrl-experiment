@@ -1005,7 +1005,7 @@ class ExtFuncs
 
 		if ( strlen( $substr ) == 0 ) return true;
 
-		return SchemaTypes::endsWith( $str, $substr );
+		return SchemaTypes::endsWith( $str, $substr ) ? CoreFuncs::$True : CoreFuncs::$False ;
 	}
 
 	/**
