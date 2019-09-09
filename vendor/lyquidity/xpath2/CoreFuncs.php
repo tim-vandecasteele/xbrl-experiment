@@ -100,6 +100,11 @@ class FalseValue extends ReferenceType
 	{
 		return "false";
 	}
+
+	public function getTypedValue()
+	{
+		return false;
+	}
 }
 
 /**
@@ -114,6 +119,11 @@ class TrueValue extends ReferenceType
 	public function __toString()
 	{
 		return "true";
+	}
+
+	public function getTypedValue()
+	{
+		return true;
 	}
 }
 
